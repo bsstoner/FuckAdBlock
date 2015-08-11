@@ -40,8 +40,8 @@
 			}, 1);
 			self._ready = true;
 		};
-		if(window.addEventListener !== undefined) {
-			window.addEventListener('load', eventCallback, false);
+		if(document.addEventListener !== undefined) {
+			document.addEventListener('DOMContentLoaded', eventCallback, false);
 		} else {
 			window.attachEvent('onload', eventCallback);
 		}
